@@ -198,7 +198,6 @@ void loop()
             }
             vRingbufferReturnItem(rb, (void*)item);
         } else {
-            // Serial.printf("mmp????\r\n");
             if (revicecnt != 0) {
                 Serial.printf("Revice %d\r\n", revicecnt);
                 M5.Lcd.fillRect(0, 20, 320, 220, TFT_RED);
